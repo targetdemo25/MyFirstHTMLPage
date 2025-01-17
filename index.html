@@ -21,10 +21,23 @@
         }
         .intro-title {
             text-align: center;
-            color: #007bff;
+            color: #4e342e; /* Mocha Mousse */
             margin-bottom: 40px;
             font-size: 24px;
             font-weight: bold;
+            padding: 20px;
+            border: 2px solid #4e342e; /* Mocha Mousse */
+            border-radius: 10px;
+            background-color: #d7ccc8; /* Light Mocha Background */
+            animation: fadeIn 2s ease-in-out, borderPulse 3s infinite;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes borderPulse {
+            0%, 100% { border-color: #4e342e; }
+            50% { border-color: #6d4c41; } /* Slightly lighter shade */
         }
         .content-block {
             margin-bottom: 40px;
@@ -40,7 +53,7 @@
             height: auto;
         }
         .content-block h2 {
-            color: #007bff;
+            color: #4e342e; /* Mocha Mousse */
             margin-top: 0;
         }
         .content-block p {
@@ -56,13 +69,13 @@
             padding: 10px 20px;
             font-size: 16px;
             color: #fff;
-            background-color: #007bff;
+            background-color: #4e342e; /* Mocha Mousse */
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
         .btn:hover {
-            background-color: #0056b3;
+            background-color: #6d4c41; /* Slightly lighter shade */
         }
         @media (max-width: 600px) {
             .content-block img {
@@ -87,7 +100,7 @@
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQhHWODbKK5vbCDcg-tqmKmn-nARRg8LQuA&s" alt="Credit Cards">
             <h2>Unlock Exclusive Benefits with Our Credit Cards</h2>
             <p>
-                Discover a range of credit cards designed to complement your lifestyle and financial aspirations. Enjoy features like cashback rewards, travel perks, and exclusive offers that enhance your purchasing experience. Our credit cards provide the flexibility and security you need for everyday transactions and big-ticket purchases alike.
+                Explore a range of credit cards designed to complement your lifestyle and financial aspirations. Enjoy features like cashback rewards, travel perks, and exclusive offers that enhance your purchasing experience. Our credit cards provide the flexibility and security you need for everyday transactions and big-ticket purchases alike.
             </p>
             <div class="button-container">
                 <a href="https://www.hdfcbank.com/personal/pay/cards/credit-cards" class="btn" target="_blank">Explore Credit Cards</a>
