@@ -7,13 +7,13 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 40px;
-            line-height: 1.6;
+            margin: 0;
+            padding: 0;
             background-color: #f4f4f4;
         }
         .container {
-            max-width: 800px;
-            margin: auto;
+            max-width: 900px;
+            margin: 40px auto;
             background-color: #fff;
             padding: 20px;
             border-radius: 8px;
@@ -21,15 +21,28 @@
         }
         .content-block {
             margin-bottom: 40px;
+            overflow: hidden;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+        .content-block img {
+            float: left;
+            margin-right: 20px;
+            border-radius: 8px;
+            max-width: 200px;
+            height: auto;
         }
         .content-block h2 {
-            color: #333;
+            color: #007bff;
+            margin-top: 0;
         }
         .content-block p {
             color: #555;
+            text-align: justify;
         }
         .button-container {
             margin-top: 20px;
+            clear: both;
         }
         .btn {
             display: inline-block;
@@ -44,29 +57,40 @@
         .btn:hover {
             background-color: #0056b3;
         }
+        @media (max-width: 600px) {
+            .content-block img {
+                float: none;
+                display: block;
+                margin: 0 auto 20px;
+                width: 100%;
+                max-width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <!-- Credit Card Section -->
         <div class="content-block">
-            <h2>Credit Cards</h2>
+            <img src="https://www.example.com/images/credit-card.jpg" alt="Credit Cards">
+            <h2>Unlock Exclusive Benefits with Our Credit Cards</h2>
             <p>
-                Explore a variety of credit cards tailored to suit your lifestyle and financial needs. Whether you're looking for cashback, travel benefits, or reward points, our credit card offerings provide flexibility and convenience to enhance your purchasing power.
+                Discover a range of credit cards designed to complement your lifestyle and financial aspirations. Enjoy features like cashback rewards, travel perks, and exclusive offers that enhance your purchasing experience. Our credit cards provide the flexibility and security you need for everyday transactions and big-ticket purchases alike.
             </p>
             <div class="button-container">
-                <a href="https://jpmc-cib.adobecqms.net/jpmcp-cm/content/jpm-cp/fusion/public//hme/events-webinars.html?utm_campaign=ccard" class="btn" target="_blank">Explore Credit Cards</a>
+                <a href="https://www.hdfcbank.com/personal/pay/cards/credit-cards" class="btn" target="_blank">Explore Credit Cards</a>
             </div>
         </div>
 
         <!-- Home Loans Section -->
         <div class="content-block">
-            <h2>Home Loans</h2>
+            <img src="https://www.example.com/images/home-loan.jpg" alt="Home Loans">
+            <h2>Make Your Dream Home a Reality with Our Home Loans</h2>
             <p>
-                Turn your dream of owning a home into reality with our competitive home loan options. We offer flexible repayment terms, attractive interest rates, and a seamless application process to help you purchase, construct, or renovate your home with ease.
+                Achieve your homeownership goals with our tailored home loan solutions. We offer competitive interest rates, flexible repayment options, and a straightforward application process to support you in purchasing, building, or renovating your home. Let us help you turn your dream into a tangible address.
             </p>
             <div class="button-container">
-                <a href="https://jpmc-cib.adobecqms.net/jpmcp-cm/content/jpm-cp/fusion/public//hme/events-webinars.html?utm_campaign=hloans" class="btn" target="_blank">Learn About Home Loans</a>
+                <a href="https://www.hdfc.com/housing-loans/home-loans" class="btn" target="_blank">Learn About Home Loans</a>
             </div>
         </div>
     </div>
